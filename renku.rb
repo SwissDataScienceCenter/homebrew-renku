@@ -6,6 +6,12 @@ class Renku < Formula
   url "https://files.pythonhosted.org/packages/8c/a0/be8ca6ac70ddd5f3f6314c732fee1683993dbbf9a343324319c456e2843f/renku-0.1.0.dev20180621.tar.gz"
   version "0.1.0.dev20180621"
   sha256 "9796ce5dc646b1a794c55858832a893b6ef74e1d3b0df281aaa95eff8db8eea3"
+  bottle do
+    root_url "https://github.com/SwissDataScienceCenter/renku-python/releases/download/v0.1.0.dev20180621"
+    cellar :any
+    sha256 "6d05086194e8a382dd571937b2ebba4dcb91010b3318dca91675178fba04dc23" => :high_sierra
+  end
+
   version_scheme 1
   head "https://github.com/SwissDataScienceCenter/renku-python"
 
