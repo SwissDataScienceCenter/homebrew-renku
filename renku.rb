@@ -4,12 +4,12 @@ class Renku < Formula
   desc "Python SDK and CLI for the Renku platform."
   homepage "https://github.com/SwissDataScienceCenter/renku-python"
   url "https://files.pythonhosted.org/packages/8c/a0/be8ca6ac70ddd5f3f6314c732fee1683993dbbf9a343324319c456e2843f/renku-0.1.0.dev20180621.tar.gz"
-  sha256 "9796ce5dc646b1a794c55858832a893b6ef74e1d3b0df281aaa95eff8db8eea3"
-  head "https://github.com/SwissDataScienceCenter/renku-python"
   version "0.1.0.dev20180621"
+  sha256 "9796ce5dc646b1a794c55858832a893b6ef74e1d3b0df281aaa95eff8db8eea3"
   version_scheme 1
+  head "https://github.com/SwissDataScienceCenter/renku-python"
 
-  depends_on "python3"
+  depends_on "python"
   depends_on "git-lfs"
 
   resource "attrs" do
