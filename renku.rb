@@ -3,15 +3,9 @@ class Renku < Formula
 
   desc "Python SDK and CLI for the Renku platform."
   homepage "https://github.com/SwissDataScienceCenter/renku-python"
-  url "https://files.pythonhosted.org/packages/8c/a0/be8ca6ac70ddd5f3f6314c732fee1683993dbbf9a343324319c456e2843f/renku-0.1.0.dev20180621.tar.gz"
-  version "0.1.0.dev20180621"
-  sha256 "9796ce5dc646b1a794c55858832a893b6ef74e1d3b0df281aaa95eff8db8eea3"
-  bottle do
-    root_url "https://github.com/SwissDataScienceCenter/renku-python/releases/download/v0.1.0.dev20180621"
-    cellar :any
-    sha256 "6d05086194e8a382dd571937b2ebba4dcb91010b3318dca91675178fba04dc23" => :high_sierra
-  end
-
+  url "https://files.pythonhosted.org/packages/25/85/33b6818588adcd850db1d0297e6e358a0a72a9447af44dda1f220754202b/renku-0.2.0rc1.tar.gz"
+  version "0.2.0rc1"
+  sha256 "56a465a9d801e973ae3d4594114a14a034c5a1091f41b5df22738ba3c502c8c3"
   version_scheme 1
   head "https://github.com/SwissDataScienceCenter/renku-python"
 
@@ -28,14 +22,19 @@ class Renku < Formula
     sha256 "0334de2f44166b449bd2ea29d525ffe531146d7e2aad84c2b0eee081f636c7f4"
   end
 
+  resource "bagit" do
+    url "https://files.pythonhosted.org/packages/ee/11/7a7fa81c0d43fb4d449d418eba57fc6c77959754c5c2259a215152810555/bagit-1.7.0.tar.gz"
+    sha256 "f248a3dad06fd3e5d329217baace6ade79d106579696b13e2c0bbc583101ded4"
+  end
+
   resource "cachecontrol" do
     url "https://files.pythonhosted.org/packages/c5/cb/7a78039c1e0d4e5fd9d8e9edf7ae34df469267e1c58873ca11af16e96bd8/CacheControl-0.11.7.tar.gz"
     sha256 "8f7829d92584f1f2360ebfff4517ee359787d5b7dfa2ef9579f871b628745a1e"
   end
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/4d/9c/46e950a6f4d6b4be571ddcae21e7bc846fcbb88f1de3eff0f6dd0a6be55d/certifi-2018.4.16.tar.gz"
-    sha256 "13e698f54293db9f89122b0581843a782ad0934a4fe0172d2a980ba77fc61bb7"
+    url "https://files.pythonhosted.org/packages/e1/0f/f8d5e939184547b3bdc6128551b831a62832713aa98c2ccdf8c47ecc7f17/certifi-2018.8.24.tar.gz"
+    sha256 "376690d6f16d32f9d1fe8932551d80b23e9d393a8578c5633a2ed39a64861638"
   end
 
   resource "chardet" do
@@ -54,8 +53,8 @@ class Renku < Formula
   end
 
   resource "cwltool" do
-    url "https://files.pythonhosted.org/packages/0d/ee/a3e241cd30679be8c79d705857ab625bf8d10e60cbbefa903144b9fe860e/cwltool-1.0.20180525185854.tar.gz"
-    sha256 "86eda1d65b1f5f215e0cf00b1ff6d1a051fc9481cf92145fe9b8dd6d357b059a"
+    url "https://files.pythonhosted.org/packages/37/8b/3e82ea58683c6f1ce0b34e2f24ce1a05bfea0e4143aa3c5ec4c931e816f4/cwltool-1.0.20180820141117.tar.gz"
+    sha256 "bb3426c5338d5a4e8ab18482177c6d5755000144cefda799d7c0f289b4d0ddb9"
   end
 
   resource "decorator" do
@@ -69,8 +68,8 @@ class Renku < Formula
   end
 
   resource "filelock" do
-    url "https://files.pythonhosted.org/packages/2d/ba/db7e0717368958827fa97af0b8acafd983ac3a6ecd679f60f3ccd6e5b16e/filelock-3.0.4.tar.gz"
-    sha256 "011327d4ed939693a5b28c0fdf2fd9bda1f68614c1d6d0643a89382ce9843a71"
+    url "https://files.pythonhosted.org/packages/9f/b3/56767ce2b56faea340bcdc2e803859c706dff078353e87c439cefaa33c1f/filelock-3.0.6.tar.gz"
+    sha256 "59ccab92fe118da7e5ce5a9fcd95506ade58d9d5f606db4922192524edfac820"
   end
 
   resource "future" do
@@ -79,13 +78,13 @@ class Renku < Formula
   end
 
   resource "gitdb2" do
-    url "https://files.pythonhosted.org/packages/84/11/22e68bd46fd545b17d0a0b200cf75c20e9e7b817726a69ad5f3070fd0d3c/gitdb2-2.0.3.tar.gz"
-    sha256 "b60e29d4533e5e25bb50b7678bbc187c8f6bcff1344b4f293b2ba55c85795f09"
+    url "https://files.pythonhosted.org/packages/b9/36/4bdb753087a9232899ac482ee2d5da25f50b63998d661aa4e8170acd95b5/gitdb2-2.0.4.tar.gz"
+    sha256 "bb4c85b8a58531c51373c89f92163b92f30f81369605a67cd52d1fc21246c044"
   end
 
   resource "gitpython" do
-    url "https://files.pythonhosted.org/packages/f1/e4/2879ab718c80bc9261b34f214e27280f63437068582f8813ff2552373196/GitPython-2.1.10.tar.gz"
-    sha256 "b60b045cf64a321e5b620debb49890099fa6c7be6dfb7fb249027e5d34227301"
+    url "https://files.pythonhosted.org/packages/4d/e8/98e06d3bc954e3c5b34e2a579ddf26255e762d21eb24fede458eff654c51/GitPython-2.1.11.tar.gz"
+    sha256 "8237dc5bfd6f1366abeee5624111b9d6879393d84745a507de0fda86043b65a8"
   end
 
   resource "idna" do
@@ -103,9 +102,19 @@ class Renku < Formula
     sha256 "6aed02de03cba24efabcd600b30540140634fc06cfa603822d508d5361e9f799"
   end
 
+  resource "lxml" do
+    url "https://files.pythonhosted.org/packages/ca/63/139b710671c1655aed3b20c1e6776118c62e9f9311152f4c6031e12a0554/lxml-4.2.4.tar.gz"
+    sha256 "e2afbe403090f5893e254958d02875e0732975e73c4c0cdd33c1f009a61963ca"
+  end
+
   resource "mistune" do
     url "https://files.pythonhosted.org/packages/25/a4/12a584c0c59c9fed529f8b3c47ca8217c0cf8bcc5e1089d3256410cfbdbc/mistune-0.7.4.tar.gz"
     sha256 "8517af9f5cd1857bb83f9a23da75aa516d7538c32a2c5d5c56f3789a9e4cd22f"
+  end
+
+  resource "mypy-extensions" do
+    url "https://files.pythonhosted.org/packages/c2/92/3cc05d1206237d54db7b2565a58080a909445330b4f90a6436302a49f0f8/mypy_extensions-0.4.1.tar.gz"
+    sha256 "37e0e956f41369209a3d5f34580150bcacfabaa57b33a15c0b25f4b5725e0812"
   end
 
   resource "networkx" do
@@ -113,9 +122,19 @@ class Renku < Formula
     sha256 "64272ca418972b70a196cb15d9c85a5a6041f09a2f32e0d30c0255f25d458bb1"
   end
 
-  resource "oauthlib" do
-    url "https://files.pythonhosted.org/packages/df/5f/3f4aae7b28db87ddef18afed3b71921e531ca288dc604eb981e9ec9f8853/oauthlib-2.1.0.tar.gz"
-    sha256 "ac35665a61c1685c56336bda97d5eefa246f1202618a1d6f34fccb1bdd404162"
+  resource "prov" do
+    url "https://files.pythonhosted.org/packages/0a/80/bb3756a77340917a584fc0141fa70f4c51dac130724eca6033e847bdfdfa/prov-1.5.1.tar.gz"
+    sha256 "7a2d72b0df43cd9c6e374d815c8ce3cd5ca371d54f98f837853ac9fcc98aee4c"
+  end
+
+  resource "psutil" do
+    url "https://files.pythonhosted.org/packages/7d/9a/1e93d41708f8ed2b564395edfa3389f0fd6d567597401c2e5e2775118d8b/psutil-5.4.7.tar.gz"
+    sha256 "5b6322b167a5ba0c5463b4d30dfd379cd4ce245a1162ebf8fc7ab5c5ffae4f3b"
+  end
+
+  resource "pydot" do
+    url "https://files.pythonhosted.org/packages/c3/f1/e61d6dfe6c1768ed2529761a68f70939e2569da043e9f15a8d84bf56cadf/pydot-1.2.4.tar.gz"
+    sha256 "92d2e2d15531d00710f2d6fb5540d2acabc5399d464f2f20d5d21073af241eb6"
   end
 
   resource "pyld" do
@@ -134,8 +153,8 @@ class Renku < Formula
   end
 
   resource "pyyaml" do
-    url "https://files.pythonhosted.org/packages/bd/da/0a49c1a31c60634b93fd1376b3b7966c4f81f2da8263f389cad5b6bbd6e8/PyYAML-4.2b1.tar.gz"
-    sha256 "ef3a0d5a5e950747f4a39ed7b204e036b37f9bddc7551c1a813b8727515a832e"
+    url "https://files.pythonhosted.org/packages/9e/a3/1d13970c3f36777c583f136c136f804d70f500168edc1edea6daa7200769/PyYAML-3.13.tar.gz"
+    sha256 "3ef3092145e9b70e3ddd2c7ad59bdd0252a94dfe3949721633e41344de00a6bf"
   end
 
   resource "rdflib" do
@@ -153,19 +172,14 @@ class Renku < Formula
     sha256 "ec22d826a36ed72a7358ff3fe56cbd4ba69dd7a6718ffd450ff0e9df7a47ce6a"
   end
 
-  resource "requests-oauthlib" do
-    url "https://files.pythonhosted.org/packages/95/be/072464f05b70e4142cb37151e215a2037b08b1400f8a56f2538b76ca6205/requests-oauthlib-1.0.0.tar.gz"
-    sha256 "8886bfec5ad7afb391ed5443b1f697c6f4ae98d0e5620839d8b4499c032ada3f"
-  end
-
   resource "ruamel.yaml" do
-    url "https://files.pythonhosted.org/packages/cf/86/7ef6c24317e20e6cef0eab407520d49f3d3836e454d5377bdcbcf03d385c/ruamel.yaml-0.14.12.tar.gz"
-    sha256 "9f0a9d5c94d0437efc520cc05d70b244101e5185edcd279a7f0a64bb28baaec1"
+    url "https://files.pythonhosted.org/packages/77/19/c225d7dd6b3678e5f8b76b8101dc903a0f1799b7182eeab4d20b07a32878/ruamel.yaml-0.15.51.tar.gz"
+    sha256 "97eff81b23c73a2ea182c04a71e2aa939f3ca493b9b21e4ccbf52eeb000a3a46"
   end
 
   resource "schema-salad" do
-    url "https://files.pythonhosted.org/packages/af/fb/645a2c7ad327cf6da550bcc5887cada6194c81b744737ab00e050ecb39a9/schema-salad-2.7.20180611133406.tar.gz"
-    sha256 "094e8d8dcf04ff695397d455e3f17cff37df15c36b1cdf5ce8974a42015f8b59"
+    url "https://files.pythonhosted.org/packages/a9/f2/074837bf2eaa949dcf64bf06e040e1393d458e82fe160e45bfbacf9fd59e/schema-salad-2.7.20180809223002.tar.gz"
+    sha256 "f5e20c2892c55bb5fb0d62745181dc7675087b46ff091c5fea998bbe4d54ae39"
   end
 
   resource "shellescape" do
@@ -179,8 +193,8 @@ class Renku < Formula
   end
 
   resource "smmap2" do
-    url "https://files.pythonhosted.org/packages/48/d8/25d9b4b875ab3c2400ec7794ceda8093b51101a9d784da608bf65ab5f5f5/smmap2-2.0.3.tar.gz"
-    sha256 "c7530db63f15f09f8251094b22091298e82bf6c699a6b8344aaaef3f2e1276c3"
+    url "https://files.pythonhosted.org/packages/ad/e9/0fb974b182ff41d28ad267d0b4201b35159619eb610ea9a2e036817cb0b8/smmap2-2.0.4.tar.gz"
+    sha256 "dc216005e529d57007ace27048eb336dcecb7fc413cfb3b2f402bb25972b69c6"
   end
 
   resource "subprocess32" do
@@ -193,9 +207,9 @@ class Renku < Formula
     sha256 "e4ca13f26d0a6be2a2915428dc21e732f1e44dad7f76d7030b2ef1ec251cf7f2"
   end
 
-  resource "typing" do
-    url "https://files.pythonhosted.org/packages/ec/cc/28444132a25c113149cec54618abc909596f0b272a74c55bab9593f8876c/typing-3.6.4.tar.gz"
-    sha256 "d400a9344254803a2368533e4533a4200d21eb7b6b729c173bc38201a74db3f2"
+  resource "typing-extensions" do
+    url "https://files.pythonhosted.org/packages/a9/b0/c98f86c94706784699bff1262506ceab6e8101386e984a773b10be7500fc/typing_extensions-3.6.5.tar.gz"
+    sha256 "1c0a8e3b4ce55207a03dd0dcb98bc47a704c71f14fe4311ec860cc8af8f4bd27"
   end
 
   resource "urllib3" do
