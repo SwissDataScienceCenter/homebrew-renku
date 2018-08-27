@@ -10,7 +10,7 @@ class Renku < Formula
     root_url "https://github.com/SwissDataScienceCenter/renku-python/releases/download/v0.2.0rc1"
     cellar :any
     rebuild 1
-    sha256 "fc6d0ef0b81fe4e21cf48efd12ad69daf44ef46b6b8838b8e01ce1373945c830" => :high_sierra
+    sha256 "7e75cd0c192a9d1782c6530c1423110dee6d5b692d7a6dcb4ad747e9ec3985f2" => :high_sierra
   end
 
   version_scheme 1
