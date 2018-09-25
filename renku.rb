@@ -3,16 +3,9 @@ class Renku < Formula
 
   desc "Python SDK and CLI for the Renku platform."
   homepage "https://github.com/SwissDataScienceCenter/renku-python"
-  url "https://files.pythonhosted.org/packages/25/85/33b6818588adcd850db1d0297e6e358a0a72a9447af44dda1f220754202b/renku-0.2.0rc1.tar.gz"
-  version "0.2.0rc1"
-  sha256 "56a465a9d801e973ae3d4594114a14a034c5a1091f41b5df22738ba3c502c8c3"
-  bottle do
-    root_url "https://github.com/SwissDataScienceCenter/renku-python/releases/download/v0.2.0rc1"
-    cellar :any
-    rebuild 1
-    sha256 "fc5d027c3050fd6ccf7e25c07d16ad57666a16818db4874c2d1d3d45e8cede68" => :high_sierra
-  end
-
+  url "https://files.pythonhosted.org/packages/7a/d1/13e465324232dc7d9c3a4743f701e4506c04c4396ccc9a82ce06b00b1ca9/renku-0.2.0.tar.gz"
+  version "0.2.0"
+  sha256 "6b7aa59562b40d13747d825f0dd84503b5e6f8b789144f08769ad797504b611f"
   version_scheme 1
   head "https://github.com/SwissDataScienceCenter/renku-python"
 
@@ -20,8 +13,8 @@ class Renku < Formula
   depends_on "git-lfs"
 
   resource "attrs" do
-    url "https://files.pythonhosted.org/packages/e4/ac/a04671e118b57bee87dabca1e0f2d3bda816b7a551036012d0ca24190e71/attrs-18.1.0.tar.gz"
-    sha256 "e0d0eb91441a3b53dab4d9b743eafc1ac44476296a2053b6ca3af0b139faf87b"
+    url "https://files.pythonhosted.org/packages/0f/9e/26b1d194aab960063b266170e53c39f73ea0d0d3f5ce23313e0ec8ee9bdf/attrs-18.2.0.tar.gz"
+    sha256 "10cbf6e27dbce8c30807caf056c8eb50917e0eaafe86347671b57254006c3e69"
   end
 
   resource "avro-cwl" do
@@ -54,11 +47,6 @@ class Renku < Formula
     sha256 "f15516df478d5a56180fbf80e68f206010e6d160fc39fa508b65e035fd75130b"
   end
 
-  resource "click-plugins" do
-    url "https://files.pythonhosted.org/packages/77/05/da5c9e19457f20cadfe22c397cd3852577066066f63e40f2baa0831b1693/click-plugins-1.0.3.tar.gz"
-    sha256 "7acc5e7eedd2dfd719714e8d53ae99030b5357aed661d0b06dacd6c2d583d7c5"
-  end
-
   resource "cwltool" do
     url "https://files.pythonhosted.org/packages/37/8b/3e82ea58683c6f1ce0b34e2f24ce1a05bfea0e4143aa3c5ec4c931e816f4/cwltool-1.0.20180820141117.tar.gz"
     sha256 "bb3426c5338d5a4e8ab18482177c6d5755000144cefda799d7c0f289b4d0ddb9"
@@ -75,8 +63,8 @@ class Renku < Formula
   end
 
   resource "filelock" do
-    url "https://files.pythonhosted.org/packages/9f/b3/56767ce2b56faea340bcdc2e803859c706dff078353e87c439cefaa33c1f/filelock-3.0.6.tar.gz"
-    sha256 "59ccab92fe118da7e5ce5a9fcd95506ade58d9d5f606db4922192524edfac820"
+    url "https://files.pythonhosted.org/packages/ea/65/6b62e9fa0cf2a1d564bab314e89f26f04162e3c6adb08f2b7584805c5335/filelock-3.0.8.tar.gz"
+    sha256 "43531c580b8ad7bc830b5ea921b6aca8197d2d982b67b940359d9b4d546e5a9a"
   end
 
   resource "future" do
@@ -110,8 +98,8 @@ class Renku < Formula
   end
 
   resource "lxml" do
-    url "https://files.pythonhosted.org/packages/ca/63/139b710671c1655aed3b20c1e6776118c62e9f9311152f4c6031e12a0554/lxml-4.2.4.tar.gz"
-    sha256 "e2afbe403090f5893e254958d02875e0732975e73c4c0cdd33c1f009a61963ca"
+    url "https://files.pythonhosted.org/packages/4b/20/ddf5eb3bd5c57582d2b4652b4bbcf8da301bdfe5d805cb94e805f4d7464d/lxml-4.2.5.tar.gz"
+    sha256 "36720698c29e7a9626a0dc802ef8885f8f0239bfd1689628ecd459a061f2807f"
   end
 
   resource "mistune" do
@@ -125,8 +113,8 @@ class Renku < Formula
   end
 
   resource "networkx" do
-    url "https://files.pythonhosted.org/packages/11/42/f951cc6838a4dff6ce57211c4d7f8444809ccbe2134179950301e5c4c83c/networkx-2.1.zip"
-    sha256 "64272ca418972b70a196cb15d9c85a5a6041f09a2f32e0d30c0255f25d458bb1"
+    url "https://files.pythonhosted.org/packages/f3/f4/7e20ef40b118478191cec0b58c3192f822cace858c19505c7670961b76b2/networkx-2.2.zip"
+    sha256 "45e56f7ab6fe81652fb4bc9f44faddb0e9025f469f602df14e3b2551c2ea5c8b"
   end
 
   resource "prov" do
@@ -150,8 +138,8 @@ class Renku < Formula
   end
 
   resource "pyparsing" do
-    url "https://files.pythonhosted.org/packages/3c/ec/a94f8cf7274ea60b5413df054f82a8980523efd712ec55a59e7c3357cf7c/pyparsing-2.2.0.tar.gz"
-    sha256 "0832bcf47acd283788593e7a0f542407bd9550a55a8a8435214a1960e04bcb04"
+    url "https://files.pythonhosted.org/packages/cc/24/f185147523a3299a0dfbe21937d621060b3a7e98dfc672298641984769b3/pyparsing-2.2.1.tar.gz"
+    sha256 "f493ee323be1e94929416b3585eefcc04943115cecbaaa35a8c86d1a2368af19"
   end
 
   resource "python-dateutil" do
@@ -185,8 +173,8 @@ class Renku < Formula
   end
 
   resource "schema-salad" do
-    url "https://files.pythonhosted.org/packages/a9/f2/074837bf2eaa949dcf64bf06e040e1393d458e82fe160e45bfbacf9fd59e/schema-salad-2.7.20180809223002.tar.gz"
-    sha256 "f5e20c2892c55bb5fb0d62745181dc7675087b46ff091c5fea998bbe4d54ae39"
+    url "https://files.pythonhosted.org/packages/98/b2/13a3dd69e97e304b1246abe0c75c269b0d6d12d8f9decdd6b15bd6ff56b6/schema-salad-2.7.20180905124720.tar.gz"
+    sha256 "7bf995a5a34aac49adb2e2f6b1b926afcb21507481371f4227538ebd463d80b1"
   end
 
   resource "shellescape" do
