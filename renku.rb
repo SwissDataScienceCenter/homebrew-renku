@@ -3,19 +3,20 @@ class Renku < Formula
 
   desc "Python SDK and CLI for the Renku platform"
   homepage "https://github.com/swissdatasciencecenter/renku-python"
-  url "https://files.pythonhosted.org/packages/fe/0c/7dfbae702b562750fc8fc20cb9668b669770e6e1ecef35d2d31987f89faa/renku-0.4.0.tar.gz"
-  sha256 "873b92c358b6e9ef7e04a14127a1b4e468ae59beebd6e497e7aafd74e75b35ab"
+  url "https://files.pythonhosted.org/packages/31/9f/08f52336d792dfb9c9217b9db03ae19197d12513d3b22af87539b5b53dbd/renku-0.4.1a1.tar.gz"
+  sha256 "813a4ea384e340df65ba3b0b6c796fa91b9e3d1f9f726ed1b0c3a213319a2a36"
   version_scheme 1
   head "https://github.com/swissdatasciencecenter/renku-python"
 
   bottle do
-    root_url "https://github.com/SwissDataScienceCenter/renku-python/releases/download/v0.4.0"
+    root_url "https://github.com/SwissDataScienceCenter/renku-python/releases/download/v0.4.1a1"
     cellar :any
-    sha256 "2d4bc450e85e357da00ea74bb1e7576a446d56b57aec5029ca085f5eca80498b" => :mojave
+    sha256 "147cbd8264ba88031dc05e2b91f67537e53699338b53a1d7d45077c7cae9aae5" => :mojave
   end
 
   depends_on "git-lfs"
   depends_on "libxml2"
+  depends_on "libxslt"
   depends_on "node"
   depends_on "python"
 
