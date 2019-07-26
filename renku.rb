@@ -11,7 +11,8 @@ class Renku < Formula
   bottle do
     root_url "https://github.com/SwissDataScienceCenter/renku-python/releases/download/v4"
     cellar :any
-    sha256 "6fbc5e5d27eea7d3f1dbd18ab26478381a4d765870d1d1ce34b9d2331309e32c" => :mojave
+    rebuild 1
+    sha256 "29bdfb5ed2833026964ed9513745f1775cb5464b51112089b53758ef8e231bda" => :mojave
   end
 
   depends_on "git-lfs"
